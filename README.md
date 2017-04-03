@@ -1,33 +1,33 @@
-# Simon
+# Harold
 
-Simple macOS menubar system monitor, written in Python.
+Simple macOS menubar system monitor, written in Python. Forked from half0wl/simon to use my name instead of Simon.
 
-![Simon Screenshot](screenshots/dark.png)
+![Harold Screenshot](screenshots/dark.png)
 
-Only tested on **macOS Sierra 10.12.3** and **Python 3.6**.
+Only tested on **macOS Sierra 10.12.4** and **Python 3.6**.
 
 ## Installation & Usage
 
-Simon depends on `pyobjc` and `psutil`.
+Harold depends on `pyobjc` and `psutil`.
 
 ```bash
-$ git clone https://github.com/half0wl/simon.git
-$ cd simon
-$ virtualenv .venv && source .venv/bin/activate
+$ git clone https://github.com/haroldfredshort/harold.git
+$ cd harold
+$ mkvirtualenv harold && workon harold
 $ pip install -r requirements.txt
-$ python simon.py
-Simon is now running.
+$ python harold.py
+Harold is now running.
 CTRL+C does not work here.
-You can quit through the menubar (Simon -> Quit).
+You can quit through the menubar (Harold -> Quit).
 ```
 
-To run Simon in the background, use `nohup`:
+To run Harold in the background, use `nohup`:
 
 ```bash
-$ nohup python simon.py &
+$ nohup python harold.py &
 ```
 
-To quit Simon, quit through the menubar.
+To quit Harold, quit through the menubar.
 
 ## Todo / Upcoming
 

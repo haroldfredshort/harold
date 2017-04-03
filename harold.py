@@ -37,7 +37,7 @@ def bytes2human(n):
     return '%.1f%s' % (n/2**(i*10), symbols[i])
 
 
-class Simon(NSApplication):
+class Harold(NSApplication):
 
     def finishLaunching(self):
         self._setup_menuBar()
@@ -52,9 +52,9 @@ class Simon(NSApplication):
             NSEventTrackingRunLoopMode
         )
 
-        print('Simon is now running.')
+        print('Harold is now running.')
         print('CTRL+C does not work here.')
-        print('You can quit through the menubar (Simon -> Quit).')
+        print('You can quit through the menubar (Harold -> Quit).')
 
     def update_(self, timer):
 
@@ -87,7 +87,7 @@ class Simon(NSApplication):
         self.statusItem = statusBar.statusItemWithLength_(-1)
         self.menuBar = NSMenu.alloc().init()
 
-        self.statusItem.setTitle_('Simon')
+        self.statusItem.setTitle_('Harold')
 
         # Labels/buttons
         self.SYSTEM = NSMenuItem.alloc().initWithTitle_action_keyEquivalent_(
@@ -119,7 +119,7 @@ class Simon(NSApplication):
         '''
         Add our items to the menuBar - yields the following output:
 
-        Simon
+        Harold
             System
                 CPU Usage
                 RAM Usage
@@ -164,5 +164,5 @@ class Simon(NSApplication):
 
 
 if __name__ == '__main__':
-    app = Simon.sharedApplication()
+    app = Harold.sharedApplication()
     AppHelper.runEventLoop()
